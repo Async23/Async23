@@ -34,8 +34,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake-light.svg?color_snake=#286983&color_dots=#f2e9e1,#e9c6cf,#d89bae,#c67d92,#b4637a&color_dot_border=#57527912
-            dist/snake-dark.svg?color_snake=#7fb4ca&color_dots=#161b22,#4a2531,#7a3648,#b24c60,#e46876&color_dot_border=#dcd7ba12
+            dist/snake-light.svg?palette=gitlab-light
+            dist/snake-dark.svg?palette=gitlab-dark
 
       - name: Post-process snake SVGs (dot border radius 4.5px)
         run: |
