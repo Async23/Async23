@@ -276,7 +276,7 @@ def render_svg(
         pct_str = f"{item['pct']:.1f}%" if item["pct"] < 10 else f"{int(item['pct'] + 0.5)}%"
         name_txt = escape(truncate(item["name"], 15))
         legend_els.append(
-            f'<g class="fade" style="animation-delay:{idx * 45}ms">'
+            f"<g>"
             f'<circle cx="{x + 4.5}" cy="{y - 4}" r="4.2" fill="{color}" />'
             f'<text x="{x + 15}" y="{y}" class="item-name">{name_txt}</text>'
             f'<text x="{col_end[col]}" y="{y}" text-anchor="end" class="item-val">{pct_str}</text>'
@@ -293,7 +293,7 @@ def render_svg(
         tag_txt = escape(truncate(rel["tag"], 18))
         date_txt = escape(rel["date_short"])
         rel_els.append(
-            f'<g class="fade" style="animation-delay:{(idx + 1) * 55}ms">'
+            f"<g>"
             f'<text x="468" y="{y}" class="mono-repo">{repo_txt}</text>'
             f'<text x="859" y="{y}" text-anchor="end" class="mono-meta">'
             f'<tspan class="tag">{tag_txt}</tspan>'
@@ -346,9 +346,6 @@ def render_svg(
     }}
     .tag {{ fill: {t["link"]}; }}
     .sep, .date {{ fill: {t["muted"]}; }}
-    .fade {{ opacity: 0; animation: fadeIn 0.35s ease forwards; }}
-    @keyframes fadeIn {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
-    @media (prefers-reduced-motion: reduce) {{ .fade {{ opacity: 1; animation: none; }} }}
   </style>
 
   <!-- Left Card: Active Languages -->
