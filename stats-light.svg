@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 176" width="880" height="176" role="img" aria-label="Async23 active languages and recent releases">
+  <defs>
+    <clipPath id="lang-bar-clip">
+      <rect x="20" y="48" width="391" height="9" rx="4.5" ry="4.5" />
+    </clipPath>
+  </defs>
+  <style>
+    .card { fill: #f6f8fa; stroke: #d1d9e0; stroke-width: 1; }
+    .label {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "PingFang SC", "Noto Sans SC", monospace;
+      font-size: 11.5px;
+      fill: #59636e;
+      letter-spacing: 0.04em;
+    }
+    .item-name {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+      font-size: 12.5px;
+      font-weight: 500;
+      fill: #1f2328;
+    }
+    .item-val {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      fill: #59636e;
+    }
+    .mono-repo {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12.5px;
+      font-weight: 500;
+      fill: #1f2328;
+    }
+    .mono-meta {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+    }
+    .tag { fill: #0969da; }
+    .sep, .date { fill: #59636e; }
+  </style>
+
+  <!-- Left Card: Active Languages -->
+  <rect class="card" x="0.5" y="0.5" width="431" height="175" rx="6" />
+  <text x="20" y="30" class="label">近期活跃技术栈</text>
+  <text x="411" y="30" text-anchor="end" class="label">近 90 天</text>
+  <rect x="20" y="48" width="391" height="9" rx="4.5" fill="#e5e9ee" />
+  <g clip-path="url(#lang-bar-clip)">
+    <rect x="20.00" y="48" width="231.84" height="9" fill="#3572A5" /><rect x="253.84" y="48" width="61.58" height="9" fill="#3178c6" /><rect x="317.42" y="48" width="53.25" height="9" fill="#f1e05a" /><rect x="372.66" y="48" width="16.06" height="9" fill="#00ADD8" /><rect x="390.73" y="48" width="11.61" height="9" fill="#89e051" /><rect x="404.34" y="48" width="6.66" height="9" fill="#8c959f" />
+  </g>
+  <g><circle cx="24.5" cy="84" r="4.2" fill="#3572A5" /><text x="35" y="88" class="item-name">Python</text><text x="206" y="88" text-anchor="end" class="item-val">61%</text></g><g><circle cx="229.5" cy="84" r="4.2" fill="#3178c6" /><text x="240" y="88" class="item-name">TypeScript</text><text x="411" y="88" text-anchor="end" class="item-val">16%</text></g><g><circle cx="24.5" cy="114" r="4.2" fill="#f1e05a" /><text x="35" y="118" class="item-name">JavaScript</text><text x="206" y="118" text-anchor="end" class="item-val">14%</text></g><g><circle cx="229.5" cy="114" r="4.2" fill="#00ADD8" /><text x="240" y="118" class="item-name">Go</text><text x="411" y="118" text-anchor="end" class="item-val">4.2%</text></g><g><circle cx="24.5" cy="144" r="4.2" fill="#89e051" /><text x="35" y="148" class="item-name">Shell</text><text x="206" y="148" text-anchor="end" class="item-val">3.0%</text></g><g><circle cx="229.5" cy="144" r="4.2" fill="#8c959f" /><text x="240" y="148" class="item-name">Other</text><text x="411" y="148" text-anchor="end" class="item-val">1.7%</text></g>
+
+  <!-- Right Card: Recent Releases -->
+  <rect class="card" x="448.5" y="0.5" width="431" height="175" rx="6" />
+  <text x="468" y="30" class="label">近期发布节奏</text>
+  <text x="859" y="30" text-anchor="end" class="label">近 30 天 149 次贡献</text>
+  <g><text x="468" y="64" class="mono-repo">vimium</text><text x="859" y="64" text-anchor="end" class="mono-meta"><tspan class="tag">async-v2.4.4</tspan><tspan class="sep"> · </tspan><tspan class="date">11-26</tspan></text></g><g><text x="468" y="92" class="mono-repo">keep-auto-dark</text><text x="859" y="92" text-anchor="end" class="mono-meta"><tspan class="tag">v0.1.0</tspan><tspan class="sep"> · </tspan><tspan class="date">11-23</tspan></text></g><g><text x="468" y="120" class="mono-repo">obsidian-vimflow</text><text x="859" y="120" text-anchor="end" class="mono-meta"><tspan class="tag">0.1.3</tspan><tspan class="sep"> · </tspan><tspan class="date">11-16</tspan></text></g><g><text x="468" y="148" class="mono-repo">codex-changes</text><text x="859" y="148" text-anchor="end" class="mono-meta"><tspan class="tag">v0.2.0</tspan><tspan class="sep"> · </tspan><tspan class="date">11-04</tspan></text></g>
+</svg>
